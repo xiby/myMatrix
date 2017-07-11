@@ -27,7 +27,8 @@ class Matrix:
             return False
         else:
             for index_row in range(self.row):
-                for index_col in range(self.column):
+                for index_col in range(otherM.column):
+                    newM.content[index_row][index_col]=0
                     for k in range(self.column):
                         newM.content[index_row][index_col]=newM.content[index_row][index_col]+self.content[index_row][k]*otherM.content[k][index_col]
             return True

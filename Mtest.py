@@ -13,4 +13,7 @@ if __name__=='__main__':
         M.construct(newList)
         M.show()
         M.addUP(M,M)
-        M.show()
+        newM=Matrix('newM',3,3)
+        newM.construct([[0,0,0],[0,0,0],[0,0,0]])
+        M.multiply(M,newM)
+        newM.show()
